@@ -24,7 +24,6 @@ import {
   gallery,
   horses,
   instructors,
-  navItems,
   programs,
   stats,
   testimonials,
@@ -73,87 +72,6 @@ function Eyebrow({ children, light = false }: { children: React.ReactNode; light
   );
 }
 
-function SiteHeader() {
-  const [open, setOpen] = useState(false);
-
-  return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-forest/88 text-white backdrop-blur-xl">
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 lg:px-8">
-        <Link href="/" className="focus-ring flex items-center gap-3 rounded-sm">
-          <span className="grid h-11 w-11 place-items-center border border-gold/60 font-display text-lg text-gold">
-            NT
-          </span>
-          <span>
-            <span className="block font-display text-xl leading-none">NTEC</span>
-            <span className="block text-[11px] uppercase tracking-[0.24em] text-white/62">
-              Wylie, Texas
-            </span>
-          </span>
-        </Link>
-
-        <nav className="hidden items-center gap-8 lg:flex" aria-label="Primary navigation">
-          {navItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="focus-ring rounded-sm text-sm font-medium text-white/78 transition hover:text-gold"
-            >
-              {item.label}
-            </Link>
-          ))}
-        </nav>
-
-        <div className="hidden items-center gap-3 lg:flex">
-          <a
-            href={`tel:${contact.phone}`}
-            className="focus-ring inline-flex items-center gap-2 rounded-sm text-sm text-white/78 transition hover:text-gold"
-          >
-            <Phone className="h-4 w-4" />
-            {contact.phone}
-          </a>
-          <Link
-            href="/book"
-            className="focus-ring inline-flex items-center gap-2 bg-gold px-5 py-3 text-sm font-semibold text-forest shadow-gold transition hover:bg-white"
-          >
-            Book a Lesson
-            <ArrowRight className="h-4 w-4" />
-          </Link>
-        </div>
-
-        <button
-          aria-label="Open menu"
-          className="focus-ring rounded-sm p-2 lg:hidden"
-          onClick={() => setOpen(true)}
-        >
-          <Menu className="h-6 w-6" />
-        </button>
-      </div>
-
-      {open ? (
-        <div className="fixed inset-0 z-50 bg-forest p-6 text-white lg:hidden">
-          <div className="flex items-center justify-between">
-            <span className="font-display text-2xl">NTEC</span>
-            <button aria-label="Close menu" className="focus-ring rounded-sm p-2" onClick={() => setOpen(false)}>
-              <X className="h-6 w-6" />
-            </button>
-          </div>
-          <nav className="mt-14 grid gap-6" aria-label="Mobile navigation">
-            {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                onClick={() => setOpen(false)}
-                className="border-b border-white/10 pb-5 font-display text-4xl"
-              >
-                {item.label}
-              </Link>
-            ))}
-          </nav>
-        </div>
-      ) : null}
-    </header>
-  );
-}
 
 function Hero() {
   const { scrollY } = useScroll();
@@ -184,26 +102,24 @@ function Hero() {
             North Texas Equestrian Center
           </div>
           <h1 className="font-display text-5xl leading-[0.95] tracking-normal md:text-7xl lg:text-8xl">
-            Ride With Confidence.
-            <span className="block text-gold">Train With Excellence.</span>
+            Train and Ride with Champions
           </h1>
           <p className="mt-7 max-w-2xl text-lg leading-8 text-white/78 md:text-xl">
-            Premier horseback riding lessons, boarding, camps, and competition training on a 50-acre
-            equestrian estate in North Texas.
+            Horseback riding lessons, boarding, training, and horse sales in Wylie, Texas.
           </p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
             <Link
               href="/book"
               className="focus-ring inline-flex items-center justify-center gap-3 bg-gold px-7 py-4 text-sm font-semibold uppercase tracking-[0.12em] text-forest transition hover:bg-white"
             >
-              Book Your First Lesson
+              Book a Lesson
               <ArrowRight className="h-4 w-4" />
             </Link>
             <Link
-              href="/lessons"
+              href="/boarding"
               className="focus-ring inline-flex items-center justify-center gap-3 border border-white/35 px-7 py-4 text-sm font-semibold uppercase tracking-[0.12em] text-white transition hover:border-gold hover:text-gold"
             >
-              Explore Programs
+              Explore Services
             </Link>
           </div>
         </motion.div>
@@ -308,15 +224,7 @@ function Programs() {
                   ))}
                 </ul>
                 <Link
-                  href={
-                    program.title === "Horse Boarding"
-                      ? "/boarding"
-                      : program.title === "Summer Camps"
-                        ? "/summer-camp"
-                        : program.title.includes("Competition")
-                          ? "/training"
-                          : "/lessons"
-                  }
+                  href={program.href ?? "/lessons"}
                   className="focus-ring mt-9 inline-flex items-center gap-3 border-b border-gold pb-2 font-semibold text-forest transition hover:text-gold"
                 >
                   Learn More

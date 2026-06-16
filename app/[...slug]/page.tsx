@@ -112,9 +112,9 @@ function SpecializedPanel({ page }: { page: SitePage }) {
       "Email",
       "Phone",
       "Riding discipline",
-      "Rider experience",
       "Budget range",
-      "Preferred age/height",
+      "Experience level",
+      "Desired horse type",
       "Timeline"
     ];
 

@@ -43,11 +43,12 @@ export const menuTree: MenuItem[] = [
   {
     label: "About",
     children: [
-      { label: "About NTEC", href: "/about" },
+      { label: "About Us", href: "/about" },
       { label: "Kai Handt", href: "/about/kai-handt" },
       { label: "Our Team", href: "/about/team" },
       { label: "Awards", href: "/about/awards" },
-      { label: "Facilities", href: "/about/facilities" }
+      { label: "NTEC Pricing", href: "/pricing" },
+      { label: "NTEC Facilities", href: "/about/facilities" }
     ]
   },
   {
@@ -59,7 +60,6 @@ export const menuTree: MenuItem[] = [
       { label: "Dressage Riding Lessons", href: "/lessons/dressage" },
       { label: "Hunter Jumper Lessons", href: "/lessons/hunter-jumper" },
       { label: "Horse Training", href: "/training" },
-      { label: "NTEC Pricing", href: "/pricing" },
       { label: "Board Agreement Form", href: "/forms/board-agreement" },
       { label: "Release and Contact Form", href: "/forms/release-contact" },
       { label: "Policy and Procedures Form", href: "/forms/policies" }
@@ -84,6 +84,7 @@ export const menuTree: MenuItem[] = [
       { label: "Talent Search Event", href: "/events/talent-search" },
       { label: "Upcoming Horse Shows", href: "/events/horse-shows" },
       { label: "Summer Camp", href: "/summer-camp" },
+      { label: "What Is Included", href: "/summer-camp/whats-included" },
       { label: "Past Events", href: "/events/past" }
     ]
   },
@@ -765,6 +766,31 @@ export const sitePages: SitePage[] = [
     feature: { title: "Summer Camp Registration", body: "Use this page for current session dates, release forms, and registration instructions.", items: ["Session dates", "Riding activities", "Horse care", "Parent information"] },
     cta: { label: "Summer Camp Registration", href: "/summer-camp", title: "Ready for camp?", body: "Review camp details and contact NTEC about registration." },
     related: ["lessons", "forms/release-contact", "gallery/barn-life"]
+  }),
+  makePage({
+    slug: "summer-camp/whats-included",
+    navLabel: "What Is Included",
+    title: "What Is Included in Summer Camp",
+    eyebrow: "Camp Inclusions",
+    description: "A clear summary of what is included in summer camp, with riding, horse care, safety, learning, and supervision.",
+    seoTitle: "Summer Camp Inclusions | NTEC",
+    seoDescription: "Learn what is included in NTEC summer camp: riding lessons, grooming, horse care basics, barn safety, and supervised activities.",
+    image: images.field,
+    layout: "events",
+    proof: [
+      { value: "Riding", label: "Daily lessons" },
+      { value: "Care", label: "Grooming basics" },
+      { value: "Safety", label: "Supervised sessions" }
+    ],
+    intro: "Summer camp includes riding, horse care education, barn safety instruction, and hands-on supervision for a practical equestrian experience.",
+    sections: [
+      section("Riding", "Daily Riding Sessions", "Campers ride each day in a supervised setting that builds balance, control, and confidence with a lesson horse.", ["Mounted lessons", "Arena time", "Flatwork basics", "Group coaching"]),
+      section("Horse Care", "Grooming and Barn Work", "Campers learn grooming, tack preparation, barn chores, and how to handle horses safely on the ground.", ["Grooming", "Tack prep", "Horse handling", "Barn routines"]),
+      section("Safety", "Supervised Learning Environment", "The camp program emphasizes helmet use, safe footing, instructor supervision, and clear barn rules.", ["Helmet rules", "Instructor supervision", "Barn rules", "Emergency planning"])
+    ],
+    feature: { title: "Camp Inclusions", body: "The camp includes riding instruction, horse care, barn safety, team activities, and experienced supervision.", items: ["Daily riding", "Grooming lessons", "Horse care education", "Supervised activities"] },
+    cta: { label: "Register for Summer Camp", href: "/summer-camp", title: "Ready to register?", body: "Contact NTEC about current camp sessions and registration details." },
+    related: ["summer-camp", "about/facilities", "contact"]
   }),
   makePage({
     slug: "events/past",

@@ -47,58 +47,54 @@ export const whyChoose = [
 
 export const programs = [
   {
-    title: "Beginner Lessons",
-    eyebrow: "First rides, done right",
+    title: "Riding Lessons",
+    eyebrow: "English riding for all ages",
     image:
-      "https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?auto=format&fit=crop&w=1800&q=86",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1800&q=86",
     description:
-      "A calm, confidence-building introduction to English riding with steady lesson horses and patient instruction.",
-    benefits: ["Balance and horsemanship", "Private and small-group options", "Ideal for children and adult beginners"]
-  },
-  {
-    title: "Intermediate Training",
-    eyebrow: "Sharper skills",
-    image:
-      "https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&w=1800&q=86",
-    description:
-      "Structured riding development for students ready to improve position, communication, rhythm, and arena confidence.",
-    benefits: ["Flatwork refinement", "Goal-based progress plans", "Lesson horse or personal horse"]
-  },
-  {
-    title: "Advanced Competition Training",
-    eyebrow: "For the show ring",
-    image:
-      "https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?auto=format&fit=crop&w=1800&q=86",
-    description:
-      "Elite coaching for ambitious dressage, hunter jumper, and competition riders who want championship-level preparation.",
-    benefits: ["USEF and USDF show prep", "Competition strategy", "Performance-focused coaching"]
-  },
-  {
-    title: "Summer Camps",
-    eyebrow: "A season at the barn",
-    image:
-      "https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&w=1800&q=86",
-    description:
-      "Immersive riding camp experiences built around safety, horse care, barn life, and lasting confidence.",
-    benefits: ["Hands-on grooming", "Daily riding time", "Age-appropriate learning"]
+      "Structured English riding lessons designed for children, adults, beginners, returning riders, and advanced students.",
+    benefits: ["Beginner through advanced", "Children and adult programs", "Safe, consistent lesson horses"],
+    href: "/lessons"
   },
   {
     title: "Horse Boarding",
-    eyebrow: "A private home for your horse",
+    eyebrow: "Full-care stabling",
     image:
-      "https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?auto=format&fit=crop&w=1800&q=86",
+      "https://images.unsplash.com/photo-1517832207067-4db24a2ae47c?auto=format&fit=crop&w=1800&q=86",
     description:
-      "European-style stabling, attentive daily care, covered arena access, and a professional environment for serious owners.",
-    benefits: ["Room for up to 100 horses", "Covered riding arena", "Owner convenience and expert care"]
+      "European-style boarding with attentive stall care, turnout planning, covered arena access, and owner convenience.",
+    benefits: ["Daily horse care", "Covered riding arena", "Room for up to 100 horses"],
+    href: "/boarding"
   },
   {
-    title: "Private Coaching",
-    eyebrow: "Personalized advancement",
+    title: "Horse Training",
+    eyebrow: "Trainer-led development",
     image:
-      "https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&w=1800&q=86",
+      "https://images.unsplash.com/photo-1522869635100-9f4c5e3c5f03?auto=format&fit=crop&w=1800&q=86",
     description:
-      "Tailored coaching for riders seeking focused progress, horse-owner partnerships, or specialized training support.",
-    benefits: ["Individual training plans", "Horse and rider development", "Flexible progression"]
+      "Focused horse training for conditioning, young horse development, competition preparation, and performance progress.",
+    benefits: ["Young horse development", "Conditioning and fitness", "Competition preparation"],
+    href: "/training"
+  },
+  {
+    title: "Horses For Sale",
+    eyebrow: "Sales and matching support",
+    image:
+      "https://images.unsplash.com/photo-1509763878308-8c8f827ac557?auto=format&fit=crop&w=1800&q=86",
+    description:
+      "Current horses for sale with discipline guidance, temperament evaluation, and a trainer-led buyer process.",
+    benefits: ["Dressage and hunter/jumper prospects", "Horse finder support", "Trainer evaluation"],
+    href: "/horses-for-sale"
+  },
+  {
+    title: "Events and Summer Camps",
+    eyebrow: "Barn life programming",
+    image:
+      "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1800&q=86",
+    description:
+      "Clinics, horse shows, summer camps, and community events designed for riders learning, training, and competing.",
+    benefits: ["Clinics and shows", "Summer camp sessions", "Barn community events"],
+    href: "/summer-camp"
   }
 ];
 
@@ -106,33 +102,33 @@ export const gallery = [
   {
     title: "Covered Arena",
     image:
-      "https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?auto=format&fit=crop&w=1800&q=86",
+      "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1800&q=86",
     span: "lg:row-span-2"
   },
   {
-    title: "Outdoor Schooling",
+    title: "Rider Warm-Up",
     image:
-      "https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&w=1800&q=86"
+      "https://images.unsplash.com/photo-1445820132032-8d4bf795c1bc?auto=format&fit=crop&w=1800&q=86"
   },
   {
     title: "European-Style Stables",
     image:
-      "https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?auto=format&fit=crop&w=1800&q=86"
+      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1800&q=86"
   },
   {
-    title: "Training Fields",
+    title: "Training Field",
     image:
-      "https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&w=1800&q=86"
+      "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1800&q=86"
   },
   {
     title: "Horse Care",
     image:
-      "https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?auto=format&fit=crop&w=1800&q=86"
+      "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=1800&q=86"
   },
   {
     title: "Show Preparation",
     image:
-      "https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&w=1800&q=86",
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1800&q=86",
     span: "lg:col-span-2"
   }
 ];
@@ -142,52 +138,52 @@ export const instructors = [
     name: "Kai Handt",
     credentials: "USDF/USEF Champion, Owner and Head Trainer",
     experience: "20+ years",
-    specialty: "Dressage, elite training, imported warmblood selection",
+    specialty: "Dressage, sport-horse development, imported warmblood evaluation",
     image:
-      "https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?auto=format&fit=crop&w=1800&q=86"
+      "https://images.unsplash.com/photo-1516822003754-cca485356ecb?auto=format&fit=crop&w=1800&q=86"
   },
   {
-    name: "Elena Brooks",
-    credentials: "USEF Certified Instructor",
-    experience: "14 years",
-    specialty: "Junior riders, foundations, show readiness",
+    name: "Lesson Instructor",
+    credentials: "English riding coach",
+    experience: "12 years",
+    specialty: "Beginner riders, barn safety, flatwork foundations",
     image:
-      "https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&w=1800&q=86"
+      "https://images.unsplash.com/photo-1498654896293-37aacf113fd9?auto=format&fit=crop&w=1800&q=86"
   },
   {
-    name: "Marcus Vale",
-    credentials: "Competition Coach",
-    experience: "17 years",
-    specialty: "Hunter jumper, confidence under pressure",
+    name: "Barn Care Team",
+    credentials: "Daily equine care specialists",
+    experience: "Experienced handlers",
+    specialty: "Stall care, turnout, grooming, feeding routines",
     image:
-      "https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?auto=format&fit=crop&w=1800&q=86"
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1800&q=86"
   }
 ];
 
 export const horses = [
   {
     name: "Aurelia",
-    breed: "Hanoverian Mare",
-    personality: "Elegant, patient, highly responsive",
+    breed: "Hanoverian mare",
+    personality: "Balanced, responsive, steady",
     level: "Intermediate to advanced",
     image:
-      "https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&w=1800&q=86"
+      "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1800&q=86"
   },
   {
     name: "Sterling",
-    breed: "Dutch Warmblood Gelding",
-    personality: "Confident, steady, generous",
+    breed: "Dutch Warmblood gelding",
+    personality: "Confident, careful, generous",
     level: "Beginner friendly",
     image:
-      "https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?auto=format&fit=crop&w=1800&q=86"
+      "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1800&q=86"
   },
   {
     name: "Bellamy",
-    breed: "Oldenburg Gelding",
+    breed: "Oldenburg gelding",
     personality: "Athletic, focused, brave",
     level: "Competition riders",
     image:
-      "https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&w=1800&q=86"
+      "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?auto=format&fit=crop&w=1800&q=86"
   }
 ];
 
